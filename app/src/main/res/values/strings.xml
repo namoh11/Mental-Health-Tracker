@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MentalHealthTracker</string>
+    <string name="take_depression_inventory">Take Depression Inventory</string>
+    <string name="view_depression_inventory_graph">View Depression Inventory Graph</string>
+</resources>
