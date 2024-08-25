@@ -2,4 +2,6 @@
     <string name="app_name">MentalHealthTracker</string>
     <string name="take_depression_inventory">Take Depression Inventory</string>
     <string name="view_depression_inventory_graph">View Depression Inventory Graph</string>
+    <string name="warning_this_app_is_not_meant_to_replace_sound_professional_advice_for_further_consultation_please_consult_a_psychologist_psychiatrist_or_general_medical_practicioner">Warning: This app is not meant to replace sound professional advice. For further consultation, please consult a psychologist, psychiatrist, or general medical practicioner.</string>
+    <string name="dismiss">Dismiss</string>
 </resources>

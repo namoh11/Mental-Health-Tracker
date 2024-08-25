@@ -26,12 +26,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+        final View warningBox = findViewById(R.id.warning_box);
+        Button dismissButton = findViewById(R.id.dismiss_button);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
-
         });
+        // Dismiss the warning box and set the preference so it doesn't show again
+        dismissButton.setOnClickListener(new View.OnClickListener() {
+                                             @Override
+                                             public void onClick(View v) {
+                                                 warningBox.setVisibility(View.GONE);
+
+                                             }
+                                         });
         //Button quizButton = (Button) findViewById(R.id.takeDepressionQuizButton);
         TextView appGreeting = (TextView) findViewById(R.id.greeting);
         // instantiate time object
